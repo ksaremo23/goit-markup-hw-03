@@ -7,113 +7,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Roboto 400 500, 700, 900 -->
-    <link
+    <!-- <link
         href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&family=Open+Sans:wght@600&family=Quicksand:wght@500&family=Raleway:wght@700&family=Roboto&family=Tangerine:wght@400;700&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"> -->
     <!-- Raleway 800 -->
-    <link
+    <!-- <link
         href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&family=Open+Sans:wght@600&family=Quicksand:wght@500&family=Raleway:wght@700;800&family=Roboto:wght@400;500;700;900&family=Tangerine:wght@400;700&display=swap"
+        rel="stylesheet"> -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-        
+
     <link rel="stylesheet" href="./css/styles.css">
+
 
 
 </head>
 
 <body>
-    <header>
-        <nav>
+    <div class="container">
+        <header class="main-header-container">
+            <nav class="main-header-nav">
+                <a href="/" class="main-header-logo">
+                    <p><span class="web-header">Web</span><span class="studio-header">Studio</span></p>
+                </a>
+                <ul class="main-header-menu">
+                    <li class="main-header-menu-item">
+                        <a class="main-header-menu-link" href="/">Studio</a>
+                    </li>
+                    <li class="main-header-menu-item">
+                        <a class="main-header-menu-link active" href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="main-header-menu-item">
+                        <a class="main-header-menu-link" href="/">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <ul class="main-header-ctas">
+                <li class="main-header-ctas-item">
+                    <a class="main-header-ctas-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li class="main-header-ctas-item">
+                    <a class="main-header-ctas-tel" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a>
+                </li>
+            </ul>
+        </header>
+        <main>
+            <section class="filter">
+                <ul class="filter-btn-list">
+                    <li><button class="filter-btn-item">All</button></li>
+                    <li><button class="filter-btn-item">Web Site</button></li>
+                    <li><button class="filter-btn-item">App</button></li>
+                    <li><button class="filter-btn-item">Design</button></li>
+                    <li><button class="filter-btn-item">Marketing</button></li>
+                </ul>
+            </section>
+            <section class="project-card section">
+                <ul class="project-card-list">
+                    <li class="project-card-item">
+                        <img src="./images/img_row_101.jpg" alt="Banking App Interface Concept" width="360">
+                        <div class="project-card-content">
+                            <h3 class="project-card-title">Banking App Interface Concept</h3>
+                            <p class="project-card-classification">App</p>
+                        </div>
+                    </li>
+                    <li class="project-card-item">
+                        <img src="./images/img_row_102.jpg" alt="Cashless Payment" width="360">
+                        <div class="project-card-content">
+                            <h3 class="project-card-title">Cashless Payment</h3>
+                            <p class="project-card-classification">Marketing</p>
+                        </div>
+                    </li>
+                    <li class="project-card-item">
+                        <img src="./images/img_row_103.jpg" alt="Meditation App" width="360">
+                        <div class="project-card-content">
+                            <h3 class="project-card-title">Meditation App</h3>
+                            <p class="project-card-classification">App</p>
+                        </div>
+                    </li>
+                    <li class="project-card-item">
+                        <img src="./images/img_row_201.jpg" alt="Taxi Service" width="360">
+                        <div class="project-card-content">
+                            <h3 class="project-card-title">Taxi Service</h3>
+                            <p class="project-card-classification">Marketing</p>
+                        </div>
+                    </li>
+                    <li class="project-card-item">
+                        <img src="./images/img_row_202.jpg" alt="Screen Illustrations">
+                        <div class="project-card-content">
+                            <h3 class="project-card-title">Screen Illustrations</h3>
+                            <p class="project-card-classification">Design</p>
+                        </div>
+                    </li>
+                    <li class="project-card-item">
+                        <img src="./images/img_row_203.jpg" alt="Online Courses" width="360">
+                        <div class="project-card-content">
+                            <h3 class="project-card-title">Online Courses</h3>
+                            <p class="project-card-classification">Marketing</p>
+                        </div>
+                    </li>
+                    <li class="project-card-item">
+                        <img src="./images/img_row_301.jpg" alt="Instagram Stories Concept" width="360">
+                        <div class="project-card-content">
+                            <h3 class="project-card-title">Instagram Stories Concept</h3>
+                            <p class="project-card-classification">Design</p>
+                        </div>
+                    </li>
+                    <li class="project-card-item">
+                        <img src="./images/img_row_302.jpg" alt="Organic Food" width="360">
+                        <div class="project-card-content">
+                            <h3 class="project-card-title">Organic Food</h3>
+                            <p class="project-card-classification">Web Site</p>
+                        </div>
+                    </li>
+                    <li class="project-card-item">
+                        <img src="./images/img_row_303.jpg" alt="Fresh Coffee" width="360">
+                        <div class="project-card-content">
+                            <h3 class="project-card-title">Fresh Coffee</h3>
+                            <p class="project-card-classification">Web Site</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer class="page-footer">
             <a href="/">
-                <p><span class="web-header" width="44">Web</span><span class="studio-header" width="71">Studio</span>
-                </p>
+                <p><span class="web-footer">Web</span><span class="studio-footer">Studio</span></p>
             </a>
-
-            <ul class="nav-links">
-                <li><a href="./index.html">Studio</a></li>
-                <li><a href="/">Portfolio</a></li>
-                <li><a href="/">Contacts</a></li>
-            </ul>
-        </nav>
-
-        <ul class="contacts">
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a></li>
-        </ul>
-    </header>
-    <main class="filter">
-        <section>
-            <ul class="filter-btn" >
-                <li><button>All</button></li>
-                <li><button>Web Site</button></li>
-                <li><button>App</button></li>
-                <li><button>Design</button></li>
-                <li><button>Marketing</button></li>
-            </ul>
-        </section>
-        <section class="row">
-            <ul class="project-card">
-                <li>
-                    <img src="./images/img_row_101.jpg" alt="Banking App Interface Concept" width="360">
-                    <h3 class="project-card-title">Banking App Interface Concept</h3>
-                    <p class="project-card-detail">App</p>
-                </li>
-                <li>
-                    <img src="./images/img_row_102.jpg" alt="Cashless Payment" width="360">
-                    <h3 class="project-card-title">Cashless Payment</h3>
-                    <p class="project-card-detail">Marketing</p>
-                </li>
-                <li>
-                    <img src="./images/img_row_103.jpg" alt="Meditation App" width="360">
-                    <h3 class="project-card-title">Meditation App</h3>
-                    <p class="project-card-detail">App</p>
-                </li>
-            </ul>
-            <ul class="project-card">
-                <li>
-                    <img src="./images/img_row_201.jpg" alt="Taxi Service" width="360">
-                    <h3 class="project-card-title">Taxi Service</h3>
-                    <p class="project-card-detail">Marketing</p>
-                </li>
-                <li>
-                    <img src="./images/img_row_202.jpg" alt="Screen Illustrations">
-                    <h3 class="project-card-title">Screen Illustrations</h3>
-                    <p class="project-card-detail">Design</p>
-                </li>
-                <li>
-                    <img src="./images/img_row_203.jpg" alt="Online Courses" width="360">
-                    <h3 class="project-card-title">Online Courses</h3>
-                    <p class="project-card-detail">Marketing</p>
-                </li>
-            </ul>
-            <ul class="project-card">
-                <li>
-                    <img src="./images/img_row_301.jpg" alt="Instagram Stories Concept" width="360">
-                    <h3 class="project-card-title">Instagram Stories Concept</h3>
-                    <p class="project-card-detail">Design</p>
-                </li>
-                <li>
-                    <img src="./images/img_row_302.jpg" alt="Organic Food" width="360">
-                    <h3 class="project-card-title">Organic Food</h3>
-                    <p class="project-card-detail">Web Site</p>
-                </li>
-                <li>
-                    <img src="./images/img_row_303.jpg" alt="Fresh Coffee" width="360">
-                    <h3 class="project-card-title">Fresh Coffee</h3>
-                    <p class="project-card-detail">Web Site</p>
-                </li>
-            </ul>
-        </section>
-    </main>
-    <footer class="dark-bg-2">
-        <a href="/">
-            <p><span class="web-footer" display="flex" width="44px" height="21px" flex-direction="column"
-                    justify-content="center">Web</span><span class="studio-footer " display="flex" width="71px"
-                    height="21px" flex-direction="column" justify-content="center">Studio</span></p>
-        </a>
-        <p class="footer-description">Increase the flow of customers and <br>
-            sales for your business with digital <br>
-            marketing & growth solutions.</p>
-    </footer>
+            <p class="page-footer-description">Increase the flow of customers and <br>
+                sales for your business with digital <br>
+                marketing & growth solutions.</p>
+        </footer>
+    </div>
 </body>
 
 </html>
