@@ -25,18 +25,18 @@
 </head>
 
 <body>
-    <div class="container">
-        <header class="main-header-container">
+    <header class="main-header">
+        <div class="main-header-container container">
             <nav class="main-header-nav">
                 <a href="/" class="main-header-logo">
                     <p><span class="web-header">Web</span><span class="studio-header">Studio</span></p>
                 </a>
                 <ul class="main-header-menu">
                     <li class="main-header-menu-item">
-                        <a class="main-header-menu-link" href="./index.html">Studio</a>
+                        <a class="main-header-menu-link active" href="/">Studio</a>
                     </li>
                     <li class="main-header-menu-item">
-                        <a class="main-header-menu-link active" href="/">Portfolio</a>
+                        <a class="main-header-menu-link" href="./portfolio.html">Portfolio</a>
                     </li>
                     <li class="main-header-menu-item">
                         <a class="main-header-menu-link" href="/">Contacts</a>
@@ -52,9 +52,11 @@
                     <a class="main-header-ctas-tel" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a>
                 </li>
             </ul>
-        </header>
-        <main>
-            <section class="filter">
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="filter container">
                 <ul class="filter-btn-list">
                     <li><button class="filter-btn-item active">All</button></li>
                     <li><button class="filter-btn-item">Web Site</button></li>
@@ -62,8 +64,10 @@
                     <li><button class="filter-btn-item">Design</button></li>
                     <li><button class="filter-btn-item">Marketing</button></li>
                 </ul>
-            </section>
-            <section class="project-card section">
+            </div>
+        </section>
+        <section>
+            <div class="project-card container">
                 <ul class="project-card-list">
                     <li class="project-card-item">
                         <img src="./images/img_row_101.jpg" alt="Banking App Interface Concept" width="360">
@@ -129,17 +133,19 @@
                         </div>
                     </li>
                 </ul>
-            </section>
-        </main>
-        <footer class="page-footer">
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <div class="container">
             <a href="/">
                 <p><span class="web-footer">Web</span><span class="studio-footer">Studio</span></p>
             </a>
             <p class="page-footer-description">Increase the flow of customers and <br>
                 sales for your business with digital <br>
                 marketing & growth solutions.</p>
-        </footer>
-    </div>
+        </div>
+    </footer>
 </body>
 
 </html>

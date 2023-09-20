@@ -17,6 +17,7 @@ html {
 *::before,
 *::after {
     box-sizing: border-box;
+    margin: 0px;
 }
 
 body {
@@ -27,6 +28,14 @@ body {
     font-weight: 400;
     line-height: 24px; /* 150% */
     letter-spacing: 0.32px;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
 }
 
 h1,
@@ -48,9 +57,8 @@ p {
     display:flex;
     /* width: 1200px; */
     padding: 0px 15px;
-    margin-left: auto;
-    margin-right: auto;
     align-items: center;
+    margin: 24px auto;
 }
 
 .main-header-nav {
@@ -241,10 +249,14 @@ p {
 
 .hero {
     background: var(--color-navyblue, #2E2F42);
+}
+
+.hero-container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: var(--navyblue, #2E2F42);
+    gap: 48px;
+    padding: 68px 0px;
 }
 
 .hero-heading {
@@ -259,7 +271,7 @@ p {
     line-height: 1.071; /* 60px */
     letter-spacing: 1.12px;
     width: 496px;
-    margin: 0px auto 56px;
+    margin: 0px auto;
 }
 
 /* =============================================== */
@@ -289,15 +301,20 @@ h1 {
     display: flex;
     list-style: none;
     padding-left: 0px;
+
+    /* padding-left: 0px;
+    list-style: none;
+    display: flex;
+    column-gap: 24px;
+    flex-wrap: wrap; */
 }
 
-.feature {
-    margin-right: 24px;
-    display: flex;
-    width: 264px;
+.feature-list-item {
     flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
+    list-style: none;
+    margin-right: 24px;
+    flex-basis: calc((100% - 72px)/4);
 }
 
 .feature-title{
@@ -613,6 +630,10 @@ h1 {
     cursor: pointer;
 }
 
+.project-card{
+    margin: 72px auto 120px;
+}
+
 .project-card-list{
     list-style: none;
     padding-left: 0px;
@@ -622,9 +643,6 @@ h1 {
     row-gap: 48px;
     margin: 0px;
 }
-/* .project-card{
-    margin-bottom: 120px;
-} */
 
 .project-card-item{
     flex-basis: calc((100% - 48px)/3);
